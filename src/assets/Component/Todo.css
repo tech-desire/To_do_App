@@ -1,0 +1,208 @@
+body {
+  /* background:url('/22.jpg'); */
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-size:cover;
+  background-repeat: repeat;
+ backdrop-filter: blur(4px);
+}
+.todo-container
+{   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    
+
+}
+header
+{   
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.form
+{
+    /* border: 1px solid ; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .8rem;
+  
+}
+.todo-input
+{
+    width: 17rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: rgb(251, 246, 246);
+    padding: 1.2rem;
+    outline: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: black;
+   /* box-shadow: 2px .9px 10px black; */
+   transition: color  9s ease, opacity 9s ease;
+   
+}
+/* 🔹 Initial placeholder style */
+.todo-input::placeholder {
+  color: gray;
+  opacity: 1;
+  transition: opacity 1.5s ease, color 1.5s ease; /* smooth fade */
+}
+
+/* 🔹 When fade-out class is active */
+.todo-input.fade-out::placeholder {
+  opacity: 0;
+  color: blue; /* optional — for testing */
+}
+.todo-btn
+{
+    
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #26d13d;
+    color: white;
+    font-size: 1.14rem;
+    height: 2.5rem;
+    width: 16%;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+.todo-btn:hover
+{
+    
+    background-color: #c310ad;
+
+}
+h1
+{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.div-input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+li
+{
+    color:rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* .list-data
+{
+
+} */
+.List-data
+{
+     width: 17rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: rgb(251, 246, 246);
+    outline: none;
+    border-radius: 1rem;
+    display:flex;
+   margin-top: 1.7rem;
+    
+}
+.List-data.true
+{
+     background-color: #e3b5fc;
+     text-decoration-line: line-through;
+}
+.List-data button{
+  padding: .25rem;
+  cursor: pointer;
+}
+.List-data span
+{
+    width: 72%;
+    /* border: 1px solid red; */
+    margin-left: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.delete-icon
+{   
+    margin-right: .8rem;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+
+}
+.done-icon
+{
+    color: rgb(28, 129, 245);
+    font-size: 1.23rem;
+}
+.done-icon:hover
+{
+    color: rgb(226, 20, 245);
+    font-size: 1.23rem;
+}
+
+
+.Delete-all
+{
+    
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    height: 2.4rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+    width: 7.4rem;
+    opacity: 1;
+    visibility: visible;
+    transition: background-color .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+}
+.Delete-all:hover
+{
+    
+    background-color: #f5baba;
+  
+    transition: background-color .4s ease;
+    
+}
+.Delete-all.disable
+{
+    opacity: 0;
+    visibility: hidden;
+    /* transition: all .2s ease; */
+}
+
+.span.true
+{
+    background: #ee0909;
+}
+
+.clear-all-icon
+{
+    color: rgb(248, 70, 70);
+    font-size: 1.16rem;
+}
+
